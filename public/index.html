@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Connor's MTG Tabletop</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<div id="setup" class="hidden"></div>
+<div id="game" class="hidden">
+  <header id="topbar"></header>
+  <div id="layout">
+    <div id="tablewrap">
+      <section id="opps"></section>
+      <section id="center"></section>
+      <section id="mine"></section>
+      <section id="handbar"></section>
+      <div id="cmdline"><input id="cmdinput" placeholder='Type a command for your seat, e.g. "draw 2", "token Treasure x2", "attack Grizzly Bears -> Jess" (Enter). Type "help" for all.'><button id="cmdgo">Run</button></div>
+    </div>
+    <aside id="side"><div id="preview"><div class="ph">Hover a card to preview it</div></div><h3>Game log</h3><div id="log"></div></aside>
+  </div>
+</div>
+<div id="menu" class="hidden"></div>
+<div id="modal" class="hidden"><div id="modalbox"><button id="modalclose" title="Close">✕</button><div id="modalbody"></div></div></div>
+<div id="toast"></div>
+<script src="app.js"></script>
+</body></html>

@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: mtg-tabletop
+    runtime: node
+    plan: free
+    region: oregon
+    buildCommand: npm ci
+    startCommand: MTG_NO_LOCAL=1 node mcp-server.js
+    healthCheckPath: /healthz
+    envVars:
+      - key: MCP_SECRET
+        sync: false

@@ -1,0 +1,20 @@
+{
+  "name": "mtg-vtt",
+  "version": "1.0.0",
+  "description": "A Magic: The Gathering tabletop for Connor plus up to 3 bots. Card images, oracle text, and rulings come from Scryfall. Decks can be pasted as text or imported from an Archidekt link.",
+  "main": "mcp-server.js",
+  "scripts": {
+    "start": "node mcp-server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.6.7"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
